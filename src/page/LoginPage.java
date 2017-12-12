@@ -10,7 +10,6 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 public class LoginPage {
-
 	@FindBy(id="username")
 	private WebElement unTB;
 	
@@ -49,7 +48,6 @@ public class LoginPage {
 			Reporter.log("ErrMsg is NOT Displayed",true);
 			Assert.fail();
 		}
-		
 	}
 }
 
