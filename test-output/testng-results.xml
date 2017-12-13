@@ -1,55 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[testA]]>
-    </line>
-    <line>
-      <![CDATA[TestName:testA & Status:1]]>
-    </line>
-    <line>
-      <![CDATA[testB]]>
-    </line>
-    <line>
-      <![CDATA[TestName:testB & Status:2]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29" started-at="2017-12-11T02:51:48Z" finished-at="2017-12-11T02:51:48Z">
+  <suite name="Default suite" duration-ms="6021" started-at="2017-12-13T04:06:32Z" finished-at="2017-12-13T04:06:38Z">
     <groups>
+      <group name="version">
+        <method signature="CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@68be2bc2]" name="testCheckProductVersion" class="script.CheckProductVersion"/>
+      </group> <!-- version -->
     </groups>
-    <test name="Default test" duration-ms="29" started-at="2017-12-11T02:51:48Z" finished-at="2017-12-11T02:51:48Z">
-      <class name="page.A">
-        <test-method status="PASS" signature="testA()[pri:0, instance:page.A@58651fd0]" name="testA" duration-ms="6" started-at="2017-12-11T08:21:48Z" finished-at="2017-12-11T08:21:48Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="am(org.testng.ITestResult)[pri:0, instance:page.A@58651fd0]" name="am" is-config="true" duration-ms="2" started-at="2017-12-11T08:21:48Z" finished-at="2017-12-11T08:21:48Z">
+    <test name="Default test" duration-ms="6021" started-at="2017-12-13T04:06:32Z" finished-at="2017-12-13T04:06:38Z">
+      <class name="script.CheckProductVersion">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.CheckProductVersion@68be2bc2]" name="openApplication" is-config="true" duration-ms="3983" started-at="2017-12-13T09:36:32Z" finished-at="2017-12-13T09:36:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=A.testA()[pri:0, instance:page.A@58651fd0] output=testA]]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[TestName:testA & Status:1]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- am -->
-        <test-method status="FAIL" signature="testB()[pri:0, instance:page.A@58651fd0]" name="testB" duration-ms="2" started-at="2017-12-11T08:21:48Z" finished-at="2017-12-11T08:21:48Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- openApplication -->
+        <test-method status="FAIL" signature="testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@68be2bc2]" name="testCheckProductVersion" duration-ms="976" started-at="2017-12-13T09:36:36Z" finished-at="2017-12-13T09:36:37Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[unknown error: Element <div class="popup_menu_label">...</div> is not clickable at point (947, 68). Other element would receive the click: <div id="preInsertedTransformedMoireId" class="transformedMoireClass" style="transition: opacity 600ms ease-in-out; opacity: 0;"></div>
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'BTM-FACULTY-PC', ip: '192.168.0.39', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\BTM-FA~1\AppData\Local\Temp\scoped_dir4916_26815}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=63.0.3239.84, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 09854a280dddfbb537d6c93e1f5e2437]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.fail(Assert.java:100)
-	at page.A.testB(A.java:19)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <div class="popup_menu_label">...</div> is not clickable at point (947, 68). Other element would receive the click: <div id="preInsertedTransformedMoireId" class="transformedMoireClass" style="transition: opacity 600ms ease-in-out; opacity: 0;"></div>
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'BTM-FACULTY-PC', ip: '192.168.0.39', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\BTM-FA~1\AppData\Local\Temp\scoped_dir4916_26815}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=63.0.3239.84, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 09854a280dddfbb537d6c93e1f5e2437
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at page.EnterTimeTrackPage.clickHelp(EnterTimeTrackPage.java:33)
+	at script.CheckProductVersion.testCheckProductVersion(CheckProductVersion.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -77,28 +93,22 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
-            <line>
-              <![CDATA[testB]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method status="PASS" signature="am(org.testng.ITestResult)[pri:0, instance:page.A@58651fd0]" name="am" is-config="true" duration-ms="1" started-at="2017-12-11T08:21:48Z" finished-at="2017-12-11T08:21:48Z">
+        </test-method> <!-- testCheckProductVersion -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@68be2bc2]" name="closeApplication" is-config="true" duration-ms="1036" started-at="2017-12-13T09:36:37Z" finished-at="2017-12-13T09:36:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testB status=FAILURE method=A.testB()[pri:0, instance:page.A@58651fd0] output=testB]]]>
+                <![CDATA[[TestResult name=testCheckProductVersion status=FAILURE method=CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@68be2bc2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[TestName:testB & Status:2]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- am -->
-      </class> <!-- page.A -->
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.CheckProductVersion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
